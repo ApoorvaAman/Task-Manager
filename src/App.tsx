@@ -1,6 +1,7 @@
 import { useState, FunctionComponent } from 'react'
 import AddTodoForm from './components/AddTodoForm'
 import TodoList from './components/TodoList'
+import './styles/styles.css'
 
 const initialTodos: Todo[] = [
   { text: 'Write some code', complete: false },

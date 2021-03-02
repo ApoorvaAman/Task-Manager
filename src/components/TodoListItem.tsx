@@ -1,5 +1,4 @@
 import { FunctionComponent } from 'react'
-import '../styles/TodoListItem.css'
 
 interface TodolistItemProps {
   todo: Todo
@@ -8,9 +7,13 @@ interface TodolistItemProps {
 
 const TodolistItem: FunctionComponent<TodolistItemProps> = ({ todo, toggleTodo }) => {
   return (
-    <li>
+    <li className='li-item'>
       <label className={todo.complete ? 'complete' : undefined}>
-        <input type='checkbox' checked={todo.complete} onClick={() => toggleTodo(todo)} />
+        <input
+          type='checkbox'
+          checked={todo.complete}
+          onChange={() => toggleTodo(todo)}
+        />
         {todo.text}
       </label>
     </li>

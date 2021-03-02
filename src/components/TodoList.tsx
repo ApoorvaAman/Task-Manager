@@ -8,7 +8,7 @@ interface TodoListProps {
 
 const TodoList: FunctionComponent<TodoListProps> = ({ todos, toggleTodo }) => {
   return (
-    <ul>
+    <ul className='todo-list'>
       {todos.map((todo) => {
         return <TodolistItem key={todo.text} todo={todo} toggleTodo={toggleTodo} />
       })}
