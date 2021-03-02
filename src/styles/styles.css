@@ -1,0 +1,43 @@
+* {
+  margin: 0 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+}
+.todo-app {
+  height: 80vh;
+  width: 40vw;
+  border-style: solid;
+  border-color: goldenrod;
+  padding: 2px 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.todo-list {
+  border-style: solid;
+  border-color: blueviolet;
+  list-style: none;
+  padding: 2px 2px;
+}
+
+.li-item {
+  border-style: solid;
+  border-color: black;
+  padding: 2px 2px;
+  margin-left: 0;
+}
+.complete {
+  text-decoration: line-through;
+}
+
+.add-todo-form {
+  border-style: solid;
+  border-color: violet;
+  padding: 2px 2px;
+}
