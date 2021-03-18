@@ -17,11 +17,11 @@ const AddTodoForm: FunctionComponent<AddTodoFormProps> = ({ addTodo }) => {
   }
   return (
     <form className='add-todo-form'>
-      <label htmlFor='todo'>
-        <input type='text' value={newTodo} onChange={handleChange} id='todo' />
+      <label htmlFor='add-todo'>
+        <input type='text' value={newTodo} onChange={handleChange} id='add-todo' />
       </label>
-      <button type='submit' onClick={handleSubmit}>
-        Add Todo
+      <button className='add-button' type='submit' onClick={handleSubmit}>
+        +
       </button>
     </form>
   )

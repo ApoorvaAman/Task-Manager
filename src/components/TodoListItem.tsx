@@ -7,8 +7,8 @@ interface TodolistItemProps {
 
 const TodolistItem: FunctionComponent<TodolistItemProps> = ({ todo, toggleTodo }) => {
   return (
-    <li className='li-item'>
-      <label className={todo.complete ? 'complete' : undefined}>
+    <li className='todo-item'>
+      <label id='todo' className={todo.complete ? 'complete' : undefined}>
         <input
           type='checkbox'
           checked={todo.complete}
