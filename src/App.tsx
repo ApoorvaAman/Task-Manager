@@ -1,4 +1,4 @@
-import { useState, FunctionComponent } from 'react'
+import { useState } from 'react'
 import AddTodoForm from './components/AddTodoForm'
 import TodoList from './components/TodoList'
 import './styles/styles.css'
@@ -7,7 +7,7 @@ const initialTodos: Todo[] = [
   { text: 'Write some code', complete: false },
   { text: 'Make React app', complete: false },
 ]
-const App: FunctionComponent = () => {
+const App = () => {
   const [todos, setTodos] = useState(initialTodos)
 
   const toggleTodo: ToggleTodo = (selectedTodo) => {

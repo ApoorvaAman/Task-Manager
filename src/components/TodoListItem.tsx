@@ -1,14 +1,12 @@
-import { FunctionComponent } from 'react'
-
 interface TodolistItemProps {
   todo: Todo
   toggleTodo: ToggleTodo
 }
 
-const TodolistItem: FunctionComponent<TodolistItemProps> = ({ todo, toggleTodo }) => {
+const TodolistItem = ({ todo, toggleTodo }: TodolistItemProps) => {
   return (
     <li className='todo-item'>
-      <label id='todo' className={todo.complete ? 'complete' : undefined}>
+      <label id='todo' className={todo.complete ? 'complete' : ''}>
         <input
           type='checkbox'
           checked={todo.complete}

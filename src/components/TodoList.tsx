@@ -1,4 +1,3 @@
-import { FunctionComponent } from 'react'
 import TodolistItem from './TodoListItem'
 
 interface TodoListProps {
@@ -6,7 +5,7 @@ interface TodoListProps {
   toggleTodo: ToggleTodo
 }
 
-const TodoList: FunctionComponent<TodoListProps> = ({ todos, toggleTodo }) => {
+const TodoList = ({ todos, toggleTodo }: TodoListProps) => {
   return (
     <ul className='todo-list'>
       {todos.map((todo) => {

@@ -1,10 +1,10 @@
-import { ChangeEvent, FormEvent, FunctionComponent, useState } from 'react'
+import { ChangeEvent, FormEvent, useState } from 'react'
 
 interface AddTodoFormProps {
   addTodo: AddTodo
 }
 
-const AddTodoForm: FunctionComponent<AddTodoFormProps> = ({ addTodo }) => {
+const AddTodoForm = ({ addTodo }: AddTodoFormProps) => {
   const [newTodo, setNewTodo] = useState('')
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
